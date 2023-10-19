@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  width: 100%;
+  height: 100vh;
+  background-image: url('./1. ASSETS/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+}
+.overlayst {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2); 
+}
+.abejaMiel{
+  
+  min-width: 200px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 20px;
+}
+.abejaimg{
+  position: absolute;
+  bottom: -20px;
+  left: -30px;
+  display: inline-block;
+  max-width: 130px;
+}
+.contmiel{
+  float: right;
+  color: white;
+  display: inline-block;
+  
+  padding: 10px;
+}
+.mielImg{
+  max-width: 50px;
+  display: inline-block;
+}
+.miel{
+  
+  display: flex;
+  align-items: center;
+}
+.contmiel .number{
+  
+  
+  display: inline-block;
+}
+
+
+
+

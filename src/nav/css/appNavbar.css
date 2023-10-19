@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Hansip';
+    src: url('ruta/a/tu/fuente/Hansip.woff2') format('woff2');
+    /* Agrega otros formatos de fuente si es necesario */
+  }
+.AppNavbar{
+    max-width: 100%;
+    min-width: 100%;
+    height: 60px;
+    background-color: rgb(255, 208, 0);
+    font-family: 'Hansip', sans-serif;
+    position: relative;
+}
+.imgpie{
+    position: absolute;
+    z-index: 40;
+    width: 100%;
+    
+}
+.imgpie img{
+    min-height: 10vh;
+    width: 100%;
+   margin-top: 5px;
+   
+}
+.contenedorBotones{
+    width: 100%;
+   
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin:  auto;
+    
+}
+.obcionesbotones{
+    display: inline;
+    width: 80%;
+    padding-top: 15px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    z-index: 80;
+}
+.implementobotones{
+    display: inline;
+    width: 80%;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    z-index: 80;
+}
+
+.contenedoricon{
+    position: relative;
+    max-width: 80%;
+    cursor: pointer;
+}
+.contenedoricon .fondoBoton{
+    
+}
+.contenedoricon img{
+    max-width: 100%;
+    min-width: 140px;
+}
+.contenedoricon .texto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    top: 0px;
+}
+.contenedoricon .texto img{
+    display: inline;
+    max-width: 40%;
+    min-width: 50px;
+}
+.contenedoricon h4{
+    position: absolute;
+    top: 3px;
+    left: 25px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    font-size: 90%;
+}
+
+.implementobotones .icon{
+    
+    display: inline;
+    max-width: 60%;
+    
+}
+.implementobotones .icon img{
+    max-width:100%;
+    min-width:50px;
+    cursor: pointer;
+}

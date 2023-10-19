@@ -1,0 +1,158 @@
+.Pag1{
+    max-width: 100vw;
+    min-width: none;
+    margin: auto;
+   
+}
+.Pag1 .contenedorBotonet{
+    width: 90%;
+    margin: 8% auto 0;
+    height: 130px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.contenedorBotonet .bienvenido{
+    bottom: 20px; 
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    color: white;
+    
+}
+.botonleft{
+    width: 300px;
+    
+   
+    z-index: 300;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.atraz{
+    z-index: 400;
+    cursor: pointer;
+}
+.botonleft img{
+    max-width: 80%;
+    min-width: 50px;
+    cursor: pointer;
+}
+.botonleft .boton1Conten {
+    position: relative;
+    
+}
+.botonleft .boton1Conten img{
+    max-width: 220px;
+    
+}
+.botonleft .boton1Conten h4{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botonTypy{
+    cursor: pointer;
+    position: relative;
+    float: right;
+}
+.botonTypy img{
+    max-width: 200px;
+}
+.contenido{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+.contenido h4{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.contenido img{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+/*map*/
+.contendorItems{
+    background-color: rgba(247, 255, 8, 0.2);
+    border-radius: 20px;
+    border: 4px solid yellow;
+    width: 80%;
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+.contendorItems::-webkit-scrollbar{
+    width: 13px;
+    border-radius: 20px;
+    
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.contendorItems::-webkit-scrollbar-thumb{
+    background-color:red;
+    border-radius: 20px;
+}
+.items{
+    
+    
+    height: 350px;
+    flex: 1 0 220px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+.items .imgItem{
+    padding: 2px;
+    position: relative;
+    width: 245px;
+    border-radius: 40px 40px 15px 15px;
+    background-color: white;
+}
+.items .imgItem img{
+    border-radius: 40px 40px 0 0;
+    max-width: 220px;
+    margin: 10px 10px 0 10px;
+}
+.posicionColorh4{
+    position: absolute;
+    bottom: 70px;
+    
+    color: white;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    
+}
+.color{
+    margin: auto;
+    margin-top: 50px;
+}
+.imgItem .boton{
+    width: 100%;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.imgItem .boton h4{
+    color: white;
+    position: absolute;
+    top: 30px;
+}
+
