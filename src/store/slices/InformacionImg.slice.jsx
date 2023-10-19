@@ -16,8 +16,8 @@ export const thunkgetInformacion = (color) => (dispatch) => {
     dispatch(setIsLoading(true));
     console.log(color)
     const url = color
-    ? `https://facebooknode-dev-zngc.1.ie-1.fl0.io/informacion?color=${color}`
-    : 'https://facebooknode-dev-zngc.1.ie-1.fl0.io/informacion';
+    ? `https://facebooknode-dev-xnkg.1.ie-1.fl0.io/informacion?color=${color}`
+    : 'https://facebooknode-dev-xnkg.1.ie-1.fl0.io/informacion';
     return axios.get(url)
         .then((res) => dispatch(setInformacion(res.data)))
         .finally(() => dispatch(setIsLoading(false)));
