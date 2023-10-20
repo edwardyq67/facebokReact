@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -13,7 +13,24 @@ import Iniciar from "./pagina/Iniciar";
 function App() {
   const[nombret,setNombret]=useState("")
   const loading = useSelector((state) => state.isLoading);
-  
+  useEffect(() => {
+    function handleOrientationChange() {
+      if (window.orientation === 90 || window.orientation === -90) {
+        document.documentElement.style.transform = 'rotate(90deg)';
+      } else {
+        document.documentElement.style.transform = 'none';
+      }
+    }
+
+    window.addEventListener('orientationchange', handleOrientationChange);
+
+    handleOrientationChange();
+
+    return () => {
+      window.removeEventListener('orientationchange', handleOrientationChange);
+    };
+  }, []);
+
   return (
     <div className="App">
       <div className="overlayst"></div>
