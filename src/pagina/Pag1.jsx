@@ -75,7 +75,7 @@ const Pag1 = () => {
               </div>
               <div className="boton">
                 <img src={botonEnviar} alt="" />
-                <h4>ENVIAR</h4>
+                <h4>ENTER</h4>
               </div>
               
             </div>
